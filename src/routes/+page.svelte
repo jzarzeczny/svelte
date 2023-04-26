@@ -3,13 +3,15 @@
 	import Header from '$lib/components/Header.svelte';
 	import Items from '$lib/components/items/Items.svelte';
 	import '../lib/styles/styles.scss';
+
+	export let data;
 </script>
 
 <div class="container">
 	<div class="todo">
 		<Header />
 		<Form />
-		<Items />
+		<Items items={data.posts} />
 	</div>
 </div>
 

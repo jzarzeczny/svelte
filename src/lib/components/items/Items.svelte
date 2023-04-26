@@ -1,9 +1,19 @@
-<script>
+<script lang="ts">
 	import Item from './Item.svelte';
+
+	interface Item {
+		value: string;
+		_id: string;
+		done: boolean;
+	}
+
+	export let items: Item[];
 </script>
 
 <div class="container__items">
-	<Item />
+	{#each items as item}
+		<Item {item} />
+	{/each}
 </div>
 
 <style lang="scss">

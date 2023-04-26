@@ -1,5 +1,8 @@
+<script lang="ts">
+</script>
+
 <div class="container__form">
-	<form class="form" action="">
+	<form class="form" method="POST" action="?/add">
 		<input
 			type="text"
 			name="todo"
@@ -8,7 +11,7 @@
 			placeholder="Add new task"
 		/>
 
-		<input class="form__submit" type="button" value="Add" />
+		<input class="form__submit" type="submit" value="Add" />
 	</form>
 </div>
 
